@@ -12,7 +12,7 @@ Snyk deployment options are as follows:
 
 * **Multi-Tenant SaaS:** The simplest, most common, and most cost-effective way to use Snyk’s developer security platform.
 * **Single-Tenant SaaS:** Private Cloud - An isolated and fully managed instance of the Snyk developer security platform. For details, see [Snyk Deployment Options](https://snyk.io/platform/deployment-options/).
-* **Snyk Broker:** A client service installed on your private infrastructure, acting as a proxy between the Snyk developer security platform (multi- or single-tenant) and your on-premise codebase. [Snyk Broker](../implementation-and-setup/enterprise-setup/snyk-broker/) is designed to securely handle inbound and outbound connections, encrypting data during transit and deliberately controlling the access Snyk has to your data. Sensitive credentials stay behind your firewall.
+* **Snyk Broker:** A client service installed on your private infrastructure, acting as a proxy between the Snyk developer security platform (multi- or single-tenant) and your on-premise codebase. [Snyk Broker](../../implementation-and-setup/enterprise-setup/snyk-broker/) is designed to securely handle inbound and outbound connections, encrypting data during transit and deliberately controlling the access Snyk has to your data. Sensitive credentials stay behind your firewall.
 
 ## Customer data within Snyk
 
@@ -51,7 +51,7 @@ The following provides details regarding data handling by specific Snyk products
 
 * Snyk accesses manifest files, lock files, and related configuration files to identify your open-source dependencies.
 * Snyk accesses your source code under these scenarios:
-  * When [Workspaces for SCM integrations](../developer-tools/scm-integrations/workspaces.md) is enabled, Snyk ingests a short-lived, shallow clone of a [Git reference](https://git-scm.com/book/en/v2/Git-Internals-Git-References) and scans manifest files, lock files, and related configuration files in order to identify your open-source dependencies.
+  * When [Workspaces for SCM integrations](../../developer-tools/scm-integrations/workspaces.md) is enabled, Snyk ingests a short-lived, shallow clone of a [Git reference](https://git-scm.com/book/en/v2/Git-Internals-Git-References) and scans manifest files, lock files, and related configuration files in order to identify your open-source dependencies.
   * When CLI scans use the `--unmanaged` option, Snyk accesses your source code files to convert them to file signatures (hashes) and stores the file signatures and file names.
 * Snyk accesses and stores the names and version numbers of your dependencies.
 * Snyk stores the names of associated licenses, including copyright and attribution information.
@@ -97,7 +97,7 @@ Your account is subject to contract terms that might restrict your ability to en
 * CLI tests are performed locally. When results are shared with the Snyk platform using the `--report` option, resource configurations are also included.
 * SCM tests require access to your infrastructure as code files. Snyk stores them for the duration of the analysis and subsequently deletes them from the Snyk system. Snyk retains parsed resource configurations to provide context for issues and resources.
 * Terraform Cloud and Terraform Enterprise tests analyze plan files. Snyk removes secrets and sensitive values and retains resource configurations to provide context for issues and resources.
-* For unmanaged resource detection using `snyk iac describe`, Snyk relies on the principle of least privilege and requires only read-only access to [AWS](../scan-with-snyk/snyk-iac/detect-manually-created-resources/configure-cloud-providers/configure-aws-provider.md#least-privileged-policy), [Azure](../scan-with-snyk/snyk-iac/detect-manually-created-resources/configure-cloud-providers/configure-azure-provider.md#least-privileged-policy), [Google](../scan-with-snyk/snyk-iac/detect-manually-created-resources/configure-cloud-providers/configure-google-provider.md#least-privileged-policy), or [GitHub](../scan-with-snyk/snyk-iac/detect-manually-created-resources/configure-cloud-providers/configure-github-provider.md#least-privileged-policy). Provider credentials are not sent to or stored by Snyk.
+* For unmanaged resource detection using `snyk iac describe`, Snyk relies on the principle of least privilege and requires only read-only access to [AWS](../../scan-with-snyk/snyk-iac/detect-manually-created-resources/configure-cloud-providers/configure-aws-provider.md#least-privileged-policy), [Azure](../../scan-with-snyk/snyk-iac/detect-manually-created-resources/configure-cloud-providers/configure-azure-provider.md#least-privileged-policy), [Google](../../scan-with-snyk/snyk-iac/detect-manually-created-resources/configure-cloud-providers/configure-google-provider.md#least-privileged-policy), or [GitHub](../../scan-with-snyk/snyk-iac/detect-manually-created-resources/configure-cloud-providers/configure-github-provider.md#least-privileged-policy). Provider credentials are not sent to or stored by Snyk.
 * Snyk relies on local read-only Terraform State file access and extracts and sends relevant resource configuration data to the platform.
 
 #### IaC+
@@ -148,7 +148,7 @@ When scans are performed against production systems, responses may contain custo
 ## Snyk integrations: workspaces
 
 {% hint style="info" %}
-For more information on Workspaces enablement and use, see [Workspaces for SCM integrations](../developer-tools/scm-integrations/workspaces.md).
+For more information on Workspaces enablement and use, see [Workspaces for SCM integrations](../../developer-tools/scm-integrations/workspaces.md).
 {% endhint %}
 
 Snyk puts the following safeguards in place to ensure data is secure:
