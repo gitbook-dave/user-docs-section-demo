@@ -15,7 +15,7 @@ You can change or add additional filters by clicking **Advanced Filters**.
 
 ## Advanced filters
 
-Using advanced filters, you can define and apply filters to assets based on specific criteria. For details on how to define filters, see [Define filters](../manage-risk/policies/assets-policies/create-policies.md#define-filters).
+Using advanced filters, you can define and apply filters to assets based on specific criteria. For details on how to define filters, see [Define filters](../../manage-risk/policies/assets-policies/create-policies.md#define-filters).
 
 When you select advanced filters, you can specify one or more sets of criteria:
 
@@ -32,7 +32,7 @@ If you are using Snyk Essentials for the first time, Snyk recommends starting wi
 You can filter the information for all inventory layouts using the available filters in the **Advanced Filters** section.
 
 {% hint style="info" %}
-The filters **Application**, **Catalog name**, **Category**, **Lifecycle**, **Owner**, **Title** are visible only if you have configured the [application context](../developer-tools/scm-integrations/application-context-for-scm-integrations/) catalog for your SCM integrations.
+The filters **Application**, **Catalog name**, **Category**, **Lifecycle**, **Owner**, **Title** are visible only if you have configured the [application context](../../developer-tools/scm-integrations/application-context-for-scm-integrations/) catalog for your SCM integrations.
 {% endhint %}
 
 * **Application**: the applications for which you have configured the application context catalog in Snyk Essentials.

@@ -26,11 +26,11 @@ Reviewing asset inventory
 
 ## Assets overview
 
-In the Snyk Enterprise context, you can find information about assets under the following menus: [Inventory](manage-assets.md), [Policies](../manage-risk/policies/assets-policies/), and [Analytics](../manage-risk/analytics/application-analytics.md).
+In the Snyk Enterprise context, you can find information about assets under the following menus: [Inventory](./), [Policies](../manage-risk/policies/assets-policies/), and [Analytics](../manage-risk/analytics/application-analytics.md).
 
 The main source of information is the **Inventory** menu. Here, you can view, filter, and manage your assets.
 
-The [**Inventory**](manage-assets.md#inventory-overview) menu provides a centralized view of all the issues identified by Snyk with additional asset context. The Inventory serves as the cornerstone of this interconnected system, providing detailed information on each asset to facilitate further processes.
+The [**Inventory**](./#inventory-overview) menu provides a centralized view of all the issues identified by Snyk with additional asset context. The Inventory serves as the cornerstone of this interconnected system, providing detailed information on each asset to facilitate further processes.
 
 In the [**Policies**](../manage-risk/policies/assets-policies/) menu, you can create policies for organizing the assets, classifying them, and always being up to date with the latest information about an asset. The policies are put in place to regulate these assets, making sure that each one follows security standards, organizational best practices, and regulatory requirements. These policies are enforced using the data from the Inventory, ensuring consistent compliance across all assets.
 
